@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohit Kumar — Full-Stack Java Developer based in Gurgaon, India. Specializing in Spring Boot, Spring MVC, MySQL, and RESTful APIs." />
+  <meta name="author" content="Mohit Kumar" />
+  <meta property="og:title" content="Mohit Kumar | Java Developer" />
+  <meta property="og:description" content="Full-Stack Java Developer crafting scalable web applications with Spring Boot and MySQL." />
+  <meta property="og:type" content="website" />
+  <title>Mohit Kumar | Java Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>MK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"     class="nav-link" id="nl-about">About</a></li>
+        <li><a href="#skills"    class="nav-link" id="nl-skills">Skills</a></li>
+        <li><a href="#projects"  class="nav-link" id="nl-projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" id="nl-education">Education</a></li>
+        <li><a href="#contact"   class="nav-link" id="nl-contact">Contact</a></li>
+      </ul>
+      <a href="https://www.linkedin.com/in/mohitkumarrao/" target="_blank" rel="noopener" class="btn-resume" id="btn-resume">Resume</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container hero-content" data-reveal>
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Available for Opportunities
+      </div>
+
+      <h1 class="hero-name">Mohit <span class="accent">Kumar</span></h1>
+
+      <div class="hero-role" aria-label="Role description">
+        <span class="role-text">I build&nbsp;</span>
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typing-text" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+        </span>
+      </div>
+
+      <p class="hero-bio">
+        Full-Stack Java Developer crafting end-to-end web applications with
+        <span class="accent">Spring Boot</span>, MySQL &amp; Thymeleaf —
+        bridging clean backend logic with dynamic frontend experiences.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-view-work">
+          View My Work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost" id="hero-get-in-touch">Get In Touch</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/mohitkumarao" target="_blank" rel="noopener" class="social-pill" id="hero-github">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mohitkumarrao/" target="_blank" rel="noopener" class="social-pill" id="hero-linkedin">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:ymohit0795@gmail.com" class="social-pill" id="hero-email">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true" id="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-content" data-reveal>
+        <div class="about-text">
+          <p>
+            I'm a <strong>Full-Stack Java Developer</strong> based in Gurgaon, India, with expertise
+            in building end-to-end web applications. My stack centers around
+            <span class="accent">Spring Boot</span>, MySQL, and Thymeleaf —
+            tools I use to create modular, scalable, and maintainable software.
+          </p>
+          <p>
+            With a strong foundation in <span class="accent">Core Java</span>,
+            RESTful architecture, and database management, I specialize in
+            connecting clean backend logic with dynamic frontend experiences.
+            I'm passionate about clean code practices and writing software that scales.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" aria-label="2 plus">2+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">6.5</span>
+              <span class="stat-label">CGPA (MCA)</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Java</span>
+              <span class="stat-label">Primary Language</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code Card -->
+        <div class="about-code-card" role="img" aria-label="Developer profile as Java code snippet">
+          <div class="code-card-header" aria-hidden="true">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-file">Developer.java</span>
+          </div>
+          <div class="code-card-body">
+<pre><code><span class="c-kw">public class</span> <span class="c-cl">Developer</span> {
+
+  <span class="c-kw">String</span> name     <span class="c-op">=</span> <span class="c-str">"Mohit Kumar"</span><span class="c-op">;</span>
+  <span class="c-kw">String</span> role     <span class="c-op">=</span> <span class="c-str">"Java Developer"</span><span class="c-op">;</span>
+  <span class="c-kw">String</span> location <span class="c-op">=</span> <span class="c-str">"Gurgaon, IN"</span><span class="c-op">;</span>
+
+  <span class="c-kw">String[]</span> stack <span class="c-op">= {</span>
+    <span class="c-str">"Spring Boot"</span><span class="c-op">,</span>
+    <span class="c-str">"Spring MVC"</span><span class="c-op">,</span>
+    <span class="c-str">"Hibernate"</span><span class="c-op">,</span>
+    <span class="c-str">"MySQL"</span><span class="c-op">,</span>
+    <span class="c-str">"Thymeleaf"</span>
+  <span class="c-op">};</span>
+
+  <span class="c-kw">boolean</span> available <span class="c-op">=</span> <span class="c-lit">true</span><span class="c-op">;</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-number">02</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+
+      <div class="skills-grid" data-reveal>
+
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon" aria-hidden="true">☕</span>
+            Languages &amp; Runtime
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag featured">Java 17</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon" aria-hidden="true">🍃</span>
+            Frameworks &amp; Libraries
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag featured">Spring Boot</span>
+            <span class="skill-tag featured">Spring MVC</span>
+            <span class="skill-tag">Spring Data JPA</span>
+            <span class="skill-tag">Hibernate</span>
+            <span class="skill-tag">Thymeleaf</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon" aria-hidden="true">🗄️</span>
+            Databases
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag featured">MySQL</span>
+            <span class="skill-tag">Oracle</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon" aria-hidden="true">🛠️</span>
+            Tools &amp; Build
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">STS</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Tomcat</span>
+          </div>
+        </div>
+
+        <div class="skill-category skill-category--wide">
+          <h3 class="category-title">
+            <span class="category-icon" aria-hidden="true">💡</span>
+            Soft Skills
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">Clean Architecture</span>
+            <span class="skill-tag">Logical Thinking</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-number">03</span>
+        <h2 class="section-title">Featured Project</h2>
+      </div>
+
+      <article class="project-featured" data-reveal>
+
+        <!-- Browser Mockup Visual -->
+        <div class="project-visual" aria-hidden="true">
+          <div class="project-mockup">
+            <div class="mockup-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="mockup-url">🔒 ridex.website</span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-hero-area">
+                <div class="mockup-icon">🚖</div>
+                <div class="mockup-lines">
+                  <div class="mockup-line mockup-line--title"></div>
+                  <div class="mockup-line mockup-line--sub"></div>
+                </div>
+                <div class="mockup-cta-row">
+                  <div class="mockup-btn mockup-btn--primary"></div>
+                  <div class="mockup-btn mockup-btn--ghost"></div>
+                </div>
+              </div>
+              <div class="mockup-features">
+                <div class="mockup-feat">
+                  <div class="feat-icon">📍</div>
+                  <div class="feat-lines">
+                    <div class="mockup-line mockup-line--sm"></div>
+                    <div class="mockup-line mockup-line--xs"></div>
+                  </div>
+                </div>
+                <div class="mockup-feat">
+                  <div class="feat-icon">🚗</div>
+                  <div class="feat-lines">
+                    <div class="mockup-line mockup-line--sm"></div>
+                    <div class="mockup-line mockup-line--xs"></div>
+                  </div>
+                </div>
+                <div class="mockup-feat">
+                  <div class="feat-icon">💳</div>
+                  <div class="feat-lines">
+                    <div class="mockup-line mockup-line--sm"></div>
+                    <div class="mockup-line mockup-line--xs"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-glow" aria-hidden="true"></div>
+        </div>
+
+        <!-- Project Details -->
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-label">Featured Project</span>
+            <span class="project-date">Jun 2026 – Aug 2026</span>
+          </div>
+
+          <h3 class="project-title">RideX — Taxi Booking Platform</h3>
+
+          <div class="project-description">
+            <p>
+              A production-ready taxi booking web application built with
+              <span class="accent">Java 17</span> and Spring Boot 3.x,
+              fully architected around MVC pattern for a modular,
+              scalable, and maintainable codebase.
+            </p>
+            <ul class="project-highlights">
+              <li>Structured <strong>100% of backend</strong> around MVC architecture for clean separation of concerns</li>
+              <li>Integrated <strong>Spring Data JPA &amp; Hibernate Validator</strong> to enforce automated backend data verification</li>
+              <li>Reduced server restart downtime by <strong>~40%</strong> using Spring Boot DevTools during feature cycles</li>
+              <li>Configured multi-alias URL routing — <code>/home</code>, <code>/index</code>, <code>/welcome</code> — to a single controller</li>
+            </ul>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-chip">Java 17</span>
+            <span class="tech-chip">Spring Boot 3.x</span>
+            <span class="tech-chip">Spring MVC</span>
+            <span class="tech-chip">JPA / Hibernate</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">Thymeleaf</span>
+            <span class="tech-chip">Maven</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://www.ridex.website" target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="project-live-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/mohitkumarao" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" id="project-github-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-number">04</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-timeline" data-reveal>
+
+        <div class="edu-card">
+          <div class="edu-icon" aria-hidden="true">🎓</div>
+          <div class="edu-content">
+            <div class="edu-meta">
+              <span class="edu-date">May 2024 – Jun 2026</span>
+              <span class="edu-cgpa">CGPA: 6.5</span>
+            </div>
+            <h3 class="edu-degree">Master of Computer Applications</h3>
+            <p class="edu-institution">DPG Degree College, Gurugram</p>
+            <p class="edu-concentration">Concentration: Software Development</p>
+            <div class="edu-courses">
+              <span class="course-tag">Core Java</span>
+              <span class="course-tag">Advanced Java</span>
+              <span class="course-tag">DSA</span>
+              <span class="course-tag">Spring Boot</span>
+              <span class="course-tag">Hibernate</span>
+              <span class="course-tag">Servlet &amp; JSP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-connector" aria-hidden="true"></div>
+
+        <div class="edu-card">
+          <div class="edu-icon" aria-hidden="true">📐</div>
+          <div class="edu-content">
+            <div class="edu-meta">
+              <span class="edu-date">Jun 2019 – May 2022</span>
+              <span class="edu-cgpa">CGPA: 7.0</span>
+            </div>
+            <h3 class="edu-degree">Bachelor of Science in Mathematics</h3>
+            <p class="edu-institution">Amity University, Gurugram</p>
+            <p class="edu-concentration">Concentration: Applied Mathematics</p>
+            <div class="edu-courses">
+              <span class="course-tag">Discrete Mathematics</span>
+              <span class="course-tag">Probability &amp; Statistics</span>
+              <span class="course-tag">Linear Algebra</span>
+              <span class="course-tag">Differential Equations</span>
+              <span class="course-tag">Real Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-number">05</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+
+      <div class="contact-content" data-reveal>
+        <p class="contact-intro">
+          I'm currently open to new opportunities. Whether you have a job offer,
+          a project idea, or just want to say hi — my inbox is always open!
+        </p>
+        <a href="mailto:ymohit0795@gmail.com" class="btn btn-primary btn-large" id="contact-email-btn">
+          Say Hello 👋
+        </a>
+
+        <div class="contact-divider" aria-hidden="true">or reach me on</div>
+
+        <div class="contact-links">
+          <a href="https://github.com/mohitkumarao" target="_blank" rel="noopener" class="contact-social" id="contact-github">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mohitkumarrao/" target="_blank" rel="noopener" class="contact-social" id="contact-linkedin">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:ymohit0795@gmail.com" class="contact-social" id="contact-email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">
+        <span class="logo-bracket">&lt;</span>MK<span class="logo-bracket">/&gt;</span>
+      </span>
+      <p class="footer-copy">Designed &amp; Built by <span class="accent">Mohit Kumar</span> · 2026</p>
+      <p class="footer-sub">Java Developer · Gurgaon, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
