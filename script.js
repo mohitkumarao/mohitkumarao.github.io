@@ -1,12 +1,5 @@
-/* ==============================================
-   MOHIT KUMAR — PORTFOLIO SCRIPT
-   ============================================== */
-
 'use strict';
 
-/* ----------------------------------------
-   TYPING ANIMATION
-   ---------------------------------------- */
 const TYPING_STRINGS = [
   'scalable backends.',
   'Spring Boot apps.',
@@ -52,9 +45,6 @@ function typeLoop() {
   setTimeout(typeLoop, isDeleting ? DELETING_SPEED : TYPING_SPEED);
 }
 
-/* ----------------------------------------
-   NAVBAR — SCROLL SHRINK
-   ---------------------------------------- */
 const navbar = document.getElementById('navbar');
 
 function handleNavbarScroll() {
@@ -63,9 +53,6 @@ function handleNavbarScroll() {
 
 window.addEventListener('scroll', handleNavbarScroll, { passive: true });
 
-/* ----------------------------------------
-   NAVBAR — ACTIVE LINK HIGHLIGHT
-   ---------------------------------------- */
 const allNavLinks = document.querySelectorAll('.nav-link');
 const allSections = document.querySelectorAll('section[id]');
 
@@ -84,9 +71,6 @@ const sectionObserver = new IntersectionObserver(
 
 allSections.forEach((sec) => sectionObserver.observe(sec));
 
-/* ----------------------------------------
-   SCROLL REVEAL — INTERSECTION OBSERVER
-   ---------------------------------------- */
 const revealEls = document.querySelectorAll('[data-reveal]');
 
 const revealObserver = new IntersectionObserver(
@@ -102,9 +86,6 @@ const revealObserver = new IntersectionObserver(
 
 revealEls.forEach((el) => revealObserver.observe(el));
 
-/* ----------------------------------------
-   SCROLL INDICATOR FADE OUT
-   ---------------------------------------- */
 const scrollIndicator = document.getElementById('scroll-indicator');
 
 function handleScrollIndicator() {
@@ -114,9 +95,6 @@ function handleScrollIndicator() {
 
 window.addEventListener('scroll', handleScrollIndicator, { passive: true });
 
-/* ----------------------------------------
-   HAMBURGER MENU
-   ---------------------------------------- */
 const hamburger       = document.getElementById('hamburger');
 const mobileNavLinks  = document.getElementById('nav-links');
 
@@ -126,7 +104,6 @@ hamburger.addEventListener('click', () => {
   hamburger.setAttribute('aria-expanded', String(isOpen));
 });
 
-// Close mobile menu when a link is clicked
 mobileNavLinks.querySelectorAll('.nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     mobileNavLinks.classList.remove('open');
@@ -135,7 +112,6 @@ mobileNavLinks.querySelectorAll('.nav-link').forEach((link) => {
   });
 });
 
-// Close mobile menu on outside click
 document.addEventListener('click', (e) => {
   if (
     mobileNavLinks.classList.contains('open') &&
@@ -148,9 +124,6 @@ document.addEventListener('click', (e) => {
   }
 });
 
-/* ----------------------------------------
-   SMOOTH HOVER TILT — Project Mockup
-   ---------------------------------------- */
 const mockup = document.querySelector('.project-mockup');
 
 if (mockup) {
@@ -173,9 +146,6 @@ if (mockup) {
   });
 }
 
-/* ----------------------------------------
-   SKILL TAG — RIPPLE ON CLICK
-   ---------------------------------------- */
 document.querySelectorAll('.skill-tag, .tech-chip').forEach((tag) => {
   tag.addEventListener('click', function (e) {
     const ripple = document.createElement('span');
@@ -198,7 +168,6 @@ document.querySelectorAll('.skill-tag, .tech-chip').forEach((tag) => {
   });
 });
 
-// Inject ripple keyframe once
 const rippleStyle = document.createElement('style');
 rippleStyle.textContent = `
   @keyframes ripple-anim {
@@ -207,22 +176,16 @@ rippleStyle.textContent = `
 `;
 document.head.appendChild(rippleStyle);
 
-/* ----------------------------------------
-   INIT
-   ---------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-  // Initial hero reveal
-  const heroContent = document.querySelector('.hero-content');
+    const heroContent = document.querySelector('.hero-content');
   if (heroContent) {
     requestAnimationFrame(() => {
       setTimeout(() => heroContent.classList.add('revealed'), 80);
     });
   }
 
-  // Start typing after a short delay
-  setTimeout(typeLoop, 900);
+    setTimeout(typeLoop, 900);
 
-  // Run initial scroll checks
-  handleNavbarScroll();
+    handleNavbarScroll();
   handleScrollIndicator();
 });

@@ -1,8 +1,5 @@
-/* ============================================================
-   VARIABLES & FONTS
-   ============================================================ */
 :root {
-  /* Palette */
+
   --bg-primary:    #080c14;
   --bg-secondary:  #0c1220;
   --bg-card:       #101828;
@@ -21,28 +18,21 @@
   --border:        rgba(148, 163, 184, 0.08);
   --border-accent: rgba(14, 165, 233, 0.28);
 
-  /* Layout */
   --container-max: 1100px;
   --section-py:    120px;
 
-  /* Typography */
   --ff-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --ff-heading: 'Space Grotesk', -apple-system, sans-serif;
   --ff-code:    'Fira Code', 'Courier New', monospace;
 
-  /* Motion */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --trans: 0.3s var(--ease);
   --trans-slow: 0.65s var(--ease);
 
-  /* Elevation */
   --shadow-card:   0 4px 32px rgba(0,0,0,0.45);
   --shadow-accent: 0 0 48px rgba(14, 165, 233, 0.12);
 }
 
-/* ============================================================
-   RESET
-   ============================================================ */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 html {
@@ -63,9 +53,6 @@ a  { text-decoration: none; color: inherit; transition: var(--trans); }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
 
-/* ============================================================
-   UTILITIES
-   ============================================================ */
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -76,9 +63,6 @@ img { display: block; max-width: 100%; }
 
 .section { padding: var(--section-py) 0; }
 
-/* ============================================================
-   SCROLL REVEAL
-   ============================================================ */
 [data-reveal] {
   opacity: 0;
   transform: translateY(36px);
@@ -92,9 +76,6 @@ img { display: block; max-width: 100%; }
   transform: none;
 }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
 .navbar {
   position: fixed;
   inset: 0 0 auto;
@@ -210,9 +191,6 @@ img { display: block; max-width: 100%; }
 .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-/* ============================================================
-   BUTTONS
-   ============================================================ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -257,9 +235,6 @@ img { display: block; max-width: 100%; }
 .btn-sm  { padding: 9px 20px; font-size: 0.875rem; }
 .btn-large { padding: 15px 44px; font-size: 1.0625rem; border-radius: 10px; }
 
-/* ============================================================
-   HERO
-   ============================================================ */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -462,9 +437,6 @@ img { display: block; max-width: 100%; }
   100% { transform: scaleY(1); opacity: 0; }
 }
 
-/* ============================================================
-   SECTION HEADER
-   ============================================================ */
 .section-header {
   display: flex;
   align-items: center;
@@ -496,9 +468,6 @@ img { display: block; max-width: 100%; }
   min-width: 20px;
 }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
 .about { background: var(--bg-secondary); }
 
 .about-content {
@@ -614,9 +583,6 @@ img { display: block; max-width: 100%; }
 .c-lit { color: #569cd6; }
 .c-op  { color: #94a3b8; }
 
-/* ============================================================
-   SKILLS
-   ============================================================ */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -680,9 +646,6 @@ img { display: block; max-width: 100%; }
   font-weight: 600;
 }
 
-/* ============================================================
-   PROJECTS
-   ============================================================ */
 .projects { background: var(--bg-secondary); }
 
 .project-featured {
@@ -878,7 +841,25 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+  margin-bottom: 14px;
+}
+
+.project-tech-text {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  line-height: 1.7;
   margin-bottom: 26px;
+  padding: 10px 14px;
+  background: rgba(148, 163, 184, 0.04);
+  border-left: 2px solid var(--border-accent);
+  border-radius: 0 6px 6px 0;
+}
+
+.tech-text-label {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-right: 4px;
 }
 
 .tech-chip {
@@ -894,9 +875,6 @@ img { display: block; max-width: 100%; }
 
 .project-links { display: flex; gap: 12px; flex-wrap: wrap; }
 
-/* ============================================================
-   EDUCATION
-   ============================================================ */
 .education-timeline {
   display: flex;
   flex-direction: column;
@@ -998,9 +976,6 @@ img { display: block; max-width: 100%; }
   color: var(--text-muted);
 }
 
-/* ============================================================
-   CONTACT
-   ============================================================ */
 .contact {
   background: var(--bg-secondary);
   text-align: center;
@@ -1063,9 +1038,6 @@ img { display: block; max-width: 100%; }
   box-shadow: 0 10px 28px rgba(14, 165, 233, 0.15);
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer {
   border-top: 1px solid var(--border);
   padding: 28px 0;
@@ -1097,9 +1069,6 @@ img { display: block; max-width: 100%; }
   opacity: 0.6;
 }
 
-/* ============================================================
-   RESPONSIVE — TABLET
-   ============================================================ */
 @media (max-width: 960px) {
   .about-content,
   .project-featured {
@@ -1114,9 +1083,6 @@ img { display: block; max-width: 100%; }
   .skill-category--wide { grid-column: auto; }
 }
 
-/* ============================================================
-   RESPONSIVE — MOBILE
-   ============================================================ */
 @media (max-width: 768px) {
   :root { --section-py: 80px; }
 
